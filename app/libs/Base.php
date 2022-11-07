@@ -19,3 +19,14 @@ $dbh = "mysql:host=" . $this->dbhost . ";dbname=" . $this->dbname;
 $options = [
 PDO::ATTR_ERRMODE => true,
 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+];
+
+try {
+
+   $this->cnx = new PDO($dbh, $this->dbuser, $this->dbpass, $options); 
+  $this->cnx->exec("set names utf8"); 
+} catch (PDOException $e) 
+{ $this->error = $e->getMessage(); 
+  echo $this->error; 
+} 
+}
