@@ -14,7 +14,6 @@ private $error;
 
 public function __construct() 
 {
-
 $dbh = "mysql:host=" . $this->dbhost . ";dbname=" . $this->dbname;
 
 $options = [
