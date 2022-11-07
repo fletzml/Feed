@@ -14,3 +14,8 @@ private $error;
 
 public function __construct() 
 {
+$dbh = "mysql:host=" . $this->dbhost . ";dbname=" . $this->dbname;
+
+$options = [
+PDO::ATTR_ERRMODE => true,
+PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
