@@ -11,5 +11,4 @@
    $users = $this->home->connect(); 
    $this->view("pages/login" , compact("users")); 
  }
-
 }
