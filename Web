@@ -1,0 +1,2 @@
+- name: Azure WebApp
+  uses: Azure/webapps-deploy@v2
